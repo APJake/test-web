@@ -1,5 +1,5 @@
-// const URL_GITHUB_PFP='https://raw.githubusercontent.com/logixowl/Python-For-Pure-Programming/main/';
-const URL_GITHUB_PFP = '/pfp/';
+const URL_GITHUB_PFP = 'https://raw.githubusercontent.com/logixowl/Python-For-Pure-Programming/main/';
+// const URL_GITHUB_PFP = '/pfp/';
 const URL_DATA_JSON = './util/dataurls.json';
 const SPLIT_BY_LINE_PATTERN = '/\r?\n/';
 const RESULTS_URL = 'https://spreadsheets.google.com/feeds/list/1OyHVYJCkShr3rnvsEVNn2sLBG1MV0F8OkNQyOzynN0g/2/public/values?alt=json';

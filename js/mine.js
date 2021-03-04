@@ -185,7 +185,6 @@ makeHTML = (text) => {
             let reg = new RegExp(url_pattern, 'g');
             let arr = line.split(url_pattern);
             let newLine = arr[0];
-            // console.log(line.matchAll(reg));
             let urls = Array.from(line.matchAll(reg), x => x[0]);
             for (let i = 0; i < urls.length; i++) {
                 let url = urls[i];
@@ -201,7 +200,6 @@ makeHTML = (text) => {
         }
         // bold, italic
         if (line.match(/\*[^\*\s](.*?)\S\*/)) {
-            // console.log(line);
             //bold
             let newLine = '';
             let reg = new RegExp(/\*\*[^\*\s].*?\S\*\*/, 'g');
@@ -215,18 +213,14 @@ makeHTML = (text) => {
                 }
                 line = newLine;
             }
-            console.log(line);
-            console.log(newLine);
             reg = new RegExp(/\*[^\*\s].*?\S\*/, 'g');
             let arr = line.split(reg);
-            console.log(arr);
             newLine = arr[0];
             let matches = Array.from(line.matchAll(reg));
             for (let i = 0; i < matches.length; i++) {
                 let match = matches[i];
                 newLine += '<i>' + match[0].substring(1, match[0].length - 1) + '</i>' + arr[i + 1];
             }
-            // console.log(line, newLine);
             line = newLine;
         }
         // html
