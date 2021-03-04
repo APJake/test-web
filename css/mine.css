@@ -1,0 +1,148 @@
+:root {
+    --coding-bg: rgba(90, 129, 118, 0.1);
+    --highlight-bg: rgba(168, 158, 62, 0.1);
+}
+
+@font-face {
+    font-family: NotoSans-Regular;
+    src: url('../fonts/NotoSansJP-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Open-Sans-Regular;
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: Inconsolata;
+    src: url('../fonts/Inconsolata.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    /* font-family: NotoSans-Regular; */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited,
+a:active {
+    color: blue;
+}
+
+.md-style {
+    font-size: 15px;
+    font-weight: lighter;
+    border-radius: 10px;
+    padding: 40px 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.2);
+    line-height: 35px;
+}
+
+.md-style h1 {
+    font-size: 30px;
+}
+
+.md-style h2 {
+    font-size: 25px;
+}
+
+.md-style h3 {
+    font-size: 20px;
+}
+
+.md-style h1,
+h2,
+h3 {
+    font-weight: 1000;
+    margin: 15px 0px;
+}
+
+.md-style h4 {
+    font-size: 17px;
+}
+
+.md-style h5 {
+    font-size: 15px;
+}
+
+.md-style h6 {
+    font-size: 14px;
+}
+
+.md-style h4,
+h5,
+h6 {
+    font-weight: 800;
+    margin: 5px 0px;
+}
+
+.md-style pre {
+    width: fit-content;
+    background: var(--coding-bg);
+    padding: 10px 15px;
+    cursor: text;
+    border-radius: 5px;
+    font-family: Inconsolata;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.md-style span {
+    padding: 2px;
+    background: var(--coding-bg);
+    border-radius: 5px;
+    font-family: Inconsolata;
+}
+
+.md-style .highlight {
+    background: var(--highlight-bg);
+    padding: 10px 15px;
+}
+
+.md-style table tr td,
+th {
+    padding: 5px 10px;
+}
+
+.md-style table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 90%;
+    border: 1px solid rgb(75, 75, 75);
+}
+
+.md-style table th,
+td {
+    text-align: center;
+}
+
+.md-style table tr:nth-child(even) {
+    background-color: #edf5f2;
+}
+
+.md-style .responsive-table {
+    overflow-x: auto;
+    padding: 5px 0px;
+}
+
+.md-style hr {
+    height: 3px;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+}

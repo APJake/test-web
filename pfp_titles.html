@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/mine.js"></script>
+    <script src="./js/default.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/myanmar-tools/1.2.1/zawgyi_converter.min.js"></script>
+    <link rel="stylesheet" href="./css/mine.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log(changeZawgyi('ေနေကာင္းလားဗ်'));
+
+
+        let paraURL = getParaURL();
+        if (paraURL) {
+            paraURL = URL_GITHUB_PFP + paraURL;
+            // Get Text
+            fetch(paraURL)
+                .then(res => res.text())
+                .then(data => {
+                    var mydiv = document.createElement('div');
+                    mydiv.innerHTML = makeHTML(data);
+                    mydiv.className = 'md-style';
+                    document.body.appendChild(mydiv);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        } else {
+            // Get TITLES
+            fetch(URL_DATA_JSON, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(res => res.json())
+                .then(data => {
+                    var myul = document.createElement('ul');
+                    titles = data.PFP;
+                    for (const title of titles) {
+                        var myli = document.createElement('li');
+                        var mya = document.createElement('a');
+                        mya.innerHTML = title.title;
+                        mya.setAttribute('href', "?url=" + title.url);
+                        myli.appendChild(mya);
+                        myul.appendChild(myli);
+                    }
+                    document.body.appendChild(myul);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        }
+    </script>
+
+</body>
+
+</html>

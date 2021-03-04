@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Consola';
+    src: url('../fonts/CONSOLA.TTF');
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg2-color: rgb(25, 27, 27);
+    --bg1-color: rgb(50, 53, 53);
+}
+
+body {
+    background: radial-gradient(var(--bg1-color), var(--bg2-color));
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container .links a {
+    background: rgb(233, 241, 240);
+    padding: 8px 30px;
+    margin: 10px 5px;
+    text-decoration: none;
+    color: var(--bg1-color);
+    font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}

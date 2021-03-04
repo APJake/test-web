@@ -1,0 +1,54 @@
+/* dots loading */
+
+.loading-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-container h3 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.loading-container .dots-loading>div {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--bg2-color);
+    border-radius: 50%;
+    display: inline-block;
+    animation: 1.5s bounce infinite ease-in-out both;
+}
+
+.loading-container .dots-loading.white>div {
+    background: white;
+}
+
+.loading-container .dots-loading .dot1 {
+    animation-delay: -0.3s;
+}
+
+.loading-container .dots-loading .dot2 {
+    animation-delay: -0.15s;
+}
+
+@keyframes bounce {
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
+
+
+/* dots loading end */

@@ -1,0 +1,60 @@
+{
+    "PFP": [
+        {
+            "title": "Introduction",
+            "url": "./files/introduction.md"
+        },
+        {
+            "title": "Installation & Setups",
+            "url": "./files/installation_setups.md"
+        },
+        {
+            "title": "Hello World Program",
+            "url": "./files/helloworld_program.md"
+        },
+        {
+            "title": "Data Types",
+            "url": "./files/data_types.md"
+        },
+        {
+            "title": "Strings",
+            "url": "./files/strings.md"
+        },
+        {
+            "title": "Operators",
+            "url": "./files/operators.md"
+        },
+        {
+            "title": "Numeric",
+            "url": "./files/numeric.md"
+        },
+        {
+            "title": "Conditions",
+            "url": "./files/conditions.md"
+        },
+        {
+            "title": "Loops",
+            "url": "./files/loops.md"
+        },
+        {
+            "title": "Lists & Tuple",
+            "url": "./files/liststuple.md"
+        },
+        {
+            "title": "Set",
+            "url": "./files/set.md"
+        },
+        {
+            "title": "Dictionary",
+            "url": "./files/dictionary.md"
+        },
+        {
+            "title": "Functions",
+            "url": "./files/functions.md"
+        },
+        {
+            "title": "String Formatting",
+            "url": "./files/stringformat.md"
+        }
+    ]
+}
